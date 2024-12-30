@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root {
+  --light-gray: hsl(204, 43%, 93%);
+  --light-gray-transparence: hsla(203, 44%, 93%, 0.5);
+  --cyan: hsl(179, 62%, 43%);
+  --dark-cyan: hsl(179, 53%, 40%);
+  --bright-yellow: hsl(71, 73%, 54%);
+  --grayish-blue: hsl(218, 22%, 67%);
+  --padding: 50px;
+  --radius: 10px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Karla", serif;
+  font-weight: 400;
+  list-style: none;
+}
+
+.title-spacing {
+  margin-bottom: 20px;
+}
+
+.transparence {
+  color: var(--light-gray-transparence);
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--light-gray);
+}
+
+.box {
+  width: 800px;
+  box-shadow: 0px 0px 50px 1px var(--grayish-blue);
+  border-radius: var(--radius);
+}
+
+header {
+  height: 60%;
+  padding: var(--padding);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  box-sizing: border-box;
+  border-top-right-radius: var(--radius);
+  border-top-left-radius: var(--radius);
+}
+
+header h1 {
+  color: var(--cyan);
+  font-weight: 700;
+}
+
+header h3 {
+  color: var(--bright-yellow);
+  font-weight: 700;
+}
+
+header li {
+  color: var(--grayish-blue);
+  margin-bottom: 5px;
+}
+
+main {
+  height: 40%;
+  display: flex;
+  border-bottom-right-radius: var(--radius);
+  border-bottom-left-radius: var(--radius);
+}
+
+main div {
+  width: 50%;
+  padding: var(--padding);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main div:nth-child(1) {
+  background-color: var(--dark-cyan);
+}
+
+main div:nth-child(2) {
+  background-color: var(--cyan);
+}
+
+main h2 {
+  color: var(--light-gray);
+  font-weight: 700;
+}
+
+main p {
+  color: var(--light-gray);
+  display: flex;
+  align-items: center;
+}
+
+.number {
+  color: var(--light-gray);
+  margin-right: 20px;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+main button {
+  background-color: var(--bright-yellow);
+  color: var(--light-gray);
+  font-weight: 700;
+  height: 50px;
+  margin-top: 40px;
+  border: none;
+  border-radius: var(--radius);
+}
+
+main ul {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
