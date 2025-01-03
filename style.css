@@ -141,3 +141,91 @@ main ul {
 main li {
   font-size: 14px;
 }
+
+@media screen and (max-width: 768px) {
+  .title-spacing {
+    margin-bottom: 20px;
+  }  
+
+  .subtitle-spacing {
+    margin-bottom: 15px;
+  } 
+  
+  body {
+    align-items: baseline;
+    height: 100%;
+  }
+
+  .box {
+    width: 80%;
+    height: 80%;
+    margin: 50px 0;
+  }
+
+  header {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: calc(var(--padding)/1.5);
+    line-height: 20px;
+  }
+
+  header h1 {
+    font-size: 18px;
+  }
+
+  header h3 {
+    font-size: 14px;
+  }
+
+  header li {
+    font-size: 14px;
+  }
+
+  main {
+    display: block;
+  } 
+
+  main div {
+    width: auto;
+    height: auto;
+    padding: calc(var(--padding)/1.2);
+  }
+  
+  main div:nth-child(1) {
+    background-color: var(--dark-cyan);
+    border-radius: 0;
+  }
+  
+  main div:nth-child(2) {
+    background-color: var(--cyan);
+    border-bottom-left-radius: var(--radius);
+    border-bottom-right-radius: var(--radius);
+  }
+  
+  main h2 {
+    font-size: 16px;
+  }
+  
+  main p {
+    font-size: 14px;
+  }   
+
+  .number {
+    font-size: 30px;
+    margin-right: 10px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+
+  .transparence {
+    font-size: 14px;
+  }
+
+  .info {
+    font-size: 14px;
+  }
+
+}
